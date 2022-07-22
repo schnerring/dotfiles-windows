@@ -85,3 +85,6 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 Add-PoshGitToProfile
 
 Add-WindowsCapability -Online -Name OpenSSH.Client
+
+git config --global user.name "Michael Schnerring"
+git config --global user.email "3743342+schnerring@users.noreply.github.com"
