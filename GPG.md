@@ -5,6 +5,7 @@ See also:
 - [Using Your YubiKey with OpenPGP](https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP)
 - [How to use GPG with YubiKey (bonus: WSL 1 and WSL 2)](https://codingnest.com/how-to-use-gpg-with-yubikey-wsl/)
 - [drduh/YubiKey-Guide](https://github.com/drduh/YubiKey-Guide)
+- [Using YubiKey as a Windows SSH Smartcard](https://md.ekstrandom.net/blog/2019/10/yubikey-ssh)
 
 ```bash
 # Generate Master Key / 4096 bit RSA
@@ -90,9 +91,20 @@ Clone backup USB
 dd if=/dev/sdX of=/dev/sdY bs=512K status=progress
 ```
 
-## Scheduled Task
+## Scheduled Tasks
 
-Create Scheduled Task:
+### gpg-agent
 
-- Trigger: At log on
+- Trigger: `At log on`
 - Actions: Start a program `"C:\Program Files (x86)\GnuPG\bin\gpgconf.exe" --launch gpg-agent`
+- Conditions:
+  - Start the task only if the computer is on AC power: `unchecked`
+  - Stop if the computer switches to battery power: `unchecked`
+
+### wsl-ssh-pageant
+
+- Trigger: `At log on`
+- Actions: Start a program `"C:\ProgramData\chocolatey\bin\wsl-ssh-pageant-gui.exe" --systray --winssh ssh-pageant --wsl C:\wsl-ssh-pageant\ssh-agent.sock`
+- Conditions:
+  - Start the task only if the computer is on AC power: `unchecked`
+  - Stop if the computer switches to battery power: `unchecked`
