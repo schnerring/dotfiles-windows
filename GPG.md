@@ -88,3 +88,10 @@ Clone backup USB
 ```bash
 dd if=/dev/sdX of=/dev/sdY bs=512K status=progress
 ```
+
+## Scheduled Task
+
+Create Scheduled Task:
+
+- Trigger: At log on
+- Actions: Start a program `"C:\Program Files (x86)\GnuPG\bin\gpgconf.exe" --launch gpg-agent`
