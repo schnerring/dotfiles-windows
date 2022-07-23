@@ -46,6 +46,7 @@ foreach ($package in $packages) {
 }
 
 
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Python.Python.3"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.PowerShell" --override "ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ADD_FILE_CONTEXT_MENU_RUNPOWERSHELL=1"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "TeamViewer.TeamViewer"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "SumatraPDF.SumatraPDF"
