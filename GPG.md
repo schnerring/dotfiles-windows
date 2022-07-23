@@ -82,3 +82,9 @@ gpg> keytocard
 
 gpg> save
 ```
+
+Clone backup USB
+
+```bash
+dd if=/dev/sdX of=/dev/sdY bs=512K status=progress
+```

@@ -56,6 +56,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "WireGuard.WireGuard"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "GnuPG.Gpg4win"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.RemoteDesktopClient"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PuTTY.PuTTY"
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
@@ -88,3 +89,11 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 
 git config --global user.name "Michael Schnerring"
 git config --global user.email "3743342+schnerring@users.noreply.github.com"
+
+# Configure GPG
+git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+git config --global core.sshcommand "plink -agent"
+# [S] GPG Key
+git config --global user.signingkey 5FC6155C262B639750F6A5F28AECBD289638A670
+# Sign each commit
+git config --global commit.gpgsign true
