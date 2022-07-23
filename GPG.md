@@ -15,19 +15,20 @@ gpg --list-secret-keys
 gpg --list-keys
 
 # Delete Key
-gpg --delete-secret-key <KEY ID>
-gpg --delete-key <KEY ID>
+gpg --delete-secret-key $KEYID
+gpg --delete-key $KEYID
 
 # Backup Key
-gpg --armor --export-secret-key <KEY ID> > gpg-private-key.asc
-gpg --armor --export <KEY ID> > gpg-public-key.asc
+gpg --armor --export-secret-key $KEYID > gpg-private-key.asc
+gpg --armor --export $KEYID > gpg-public-key.asc
+gpg --export-ssh-key <public key id>
+
 
 # Restore Key
 gpg --import gpg-private-key.asc
 
 # Edit Key
-gpg --expert --edit-key <KEY ID>
-
+gpg --expert --edit-key $KEYID
 ```
 
 ```bash
@@ -65,7 +66,7 @@ gpg --card-status
 # Set to [ultimate] trust before continuing
 # Default Admin PIN: 12345678
 
-gpg --edit-key <KEY ID>
+gpg --edit-key $KEYID
 # Export E
 gpg> key 1
 gpg> keytocard
