@@ -116,6 +116,6 @@ git config --global user.email "3743342+schnerring@users.noreply.github.com"
 git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
 git config --global core.sshcommand "plink -agent"
 # [S] GPG Key
-git config --global user.signingkey 5FC6155C262B639750F6A5F28AECBD289638A670
+git config --global user.signingkey F5E5BE5C325BCB56
 # Sign each commit
 git config --global commit.gpgsign true
