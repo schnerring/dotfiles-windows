@@ -89,7 +89,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" "AllowDevelopmentWithoutDevLicense" 1
 
 # Hugo
-choco install --yes go
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "GoLang.Go"
 choco install --yes hugo-extended
 
 # gpg4win + win ssh + wsl
