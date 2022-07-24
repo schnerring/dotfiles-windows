@@ -20,7 +20,6 @@ $packages = @(
     "VideoLAN.VLC",    # moniker: vlc
 
     # Development
-    "Git.Git",
     "Notepad++.Notepad++",
     "Microsoft.VisualStudioCode", # moniker: vscode
     "Postman.Postman",
@@ -45,7 +44,6 @@ foreach ($package in $packages) {
     winget install --silent --source winget --accept-source-agreements --accept-package-agreements "$package"
 }
 
-
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Python.Python.3"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.PowerShell" --override "ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ADD_FILE_CONTEXT_MENU_RUNPOWERSHELL=1"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "TeamViewer.TeamViewer"
@@ -53,7 +51,6 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.Office"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.VisualStudio.2022.Professional" --override "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --add Microsoft.VisualStudio.Workload.NetCrossPlat;includeRecommended --add Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --add Microsoft.VisualStudio.Workload.Office;includeRecommended"
-
 
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.AzureStorageExplorer"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.SQLServerManagementStudio"
@@ -67,6 +64,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "GnuPG.Gpg4win"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.RemoteDesktopClient"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PuTTY.PuTTY"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OpenJS.NodeJS.LTS"
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
@@ -83,7 +81,16 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 
 # kubernetes-cli
 # kubernets-helm
-choco install hugo-extended --yes
+
+# Git
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Git.Git"
+# Enable Developer Mode
+# Used by Git to create symlinks with mklink
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" "AllowDevelopmentWithoutDevLicense" 1
+
+# Hugo
+choco install --yes go
+choco install --yes hugo-extended
 
 # gpg4win + win ssh + wsl
 choco install wsl-ssh-pageant-gui --yes
