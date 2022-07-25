@@ -66,6 +66,8 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PuTTY.PuTTY"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OpenJS.NodeJS.LTS"
 
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OpenVPNTechnologies.OpenVPN"
+
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
 
