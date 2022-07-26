@@ -70,6 +70,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Discord.Discord"
 
 # TODO: Missing Apps
 
@@ -109,7 +110,7 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 # Run in PS5 and PS7
 Add-PoshGitToProfile
 
-Add-WindowsCapability -Online -Name OpenSSH.Client
+Add-WindowsCapability -Online -Name "OpenSSH.Client"
 
 git config --global user.name "Michael Schnerring"
 git config --global user.email "3743342+schnerring@users.noreply.github.com"
@@ -118,6 +119,6 @@ git config --global user.email "3743342+schnerring@users.noreply.github.com"
 git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
 git config --global core.sshcommand "plink -agent"
 # [S] GPG Key
-git config --global user.signingkey F5E5BE5C325BCB56
+git config --global user.signingkey "F5E5BE5C325BCB56"
 # Sign each commit
 git config --global commit.gpgsign true
