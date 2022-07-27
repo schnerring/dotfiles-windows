@@ -82,8 +82,8 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 # filezilla
 # syncthing
 
-# kubernetes-cli
-# kubernets-helm
+choco install --yes kubernetes-cli
+choco install --yes kubernetes-helm
 
 # Git
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Git.Git"
