@@ -8,6 +8,12 @@ KEYID=<GPG MASTER PUBLIC KEY>
 
 ## Inital YubiKey Setup
 
+1. Set PIV, FIDO2 PIN
+2. Add TOTP secrets
+3. Register security keys (WebAuthn)
+4. Add KeePass HMAC challenge secret
+5. Configure GPG
+
 ```bash
 gpg --edit-card
 
