@@ -64,6 +64,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OpenJS.NodeJS.LTS"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OpenVPNTechnologies.OpenVPN"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PDFsam.PDFsam"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "DownloadHelper.VdhCoApp"
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
