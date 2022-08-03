@@ -120,3 +120,11 @@ git config --global core.sshcommand "plink -agent"
 git config --global user.signingkey "F5E5BE5C325BCB56"
 # Sign each commit
 git config --global commit.gpgsign true
+
+# Windows Features (VIS)
+
+Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WebServer"
+Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WindowsAuthentication"
+Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-ManagementConsole"
+Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-ASPNET45"
+Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "WCF-HTTP-Activation45"
