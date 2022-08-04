@@ -79,6 +79,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 # sourcetree
 # filezilla
 # syncthing
+# IPMI View
 
 choco install --yes kubernetes-cli
 choco install --yes kubernetes-helm
