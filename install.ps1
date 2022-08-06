@@ -69,6 +69,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Discord.Discord"
+npm install --global npm-check-updates
 
 # TODO: Missing Apps
 
@@ -83,6 +84,8 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 
 choco install --yes kubernetes-cli
 choco install --yes kubernetes-helm
+
+choco install --yes paint.net
 
 # Git
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Git.Git"
