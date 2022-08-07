@@ -65,6 +65,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OpenVPNTechnologies.OpenVPN"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PDFsam.PDFsam"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "DownloadHelper.VdhCoApp"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.AzureCLI"
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
@@ -101,8 +102,8 @@ choco install --yes hugo-extended
 choco install wsl-ssh-pageant-gui --yes
 [Environment]::SetEnvironmentVariable('SSH_AUTH_SOCK', '\\.\pipe\ssh-pageant', 'User')
 
-# packer
-# terraform
+choco install packer --yes
+choco install terraform --yes
 
 # EqualizerAPO doesn't exist in winget
 
@@ -111,6 +112,8 @@ Get-PackageProvider NuGet -Force
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 # Run in PS5 and PS7
 Add-PoshGitToProfile
+
+Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
 
 Add-WindowsCapability -Online -Name "OpenSSH.Client"
 
