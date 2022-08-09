@@ -68,6 +68,10 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.AzureCLI"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OBSProject.OBSStudio"
 
+# Audio
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Audacity.Audacity"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "AlexanderKojevnikov.Spek"
+
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Discord.Discord"
