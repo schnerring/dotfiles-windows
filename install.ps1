@@ -66,6 +66,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PDFsam.PDFsam"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "DownloadHelper.VdhCoApp"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.AzureCLI"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OBSProject.OBSStudio"
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
