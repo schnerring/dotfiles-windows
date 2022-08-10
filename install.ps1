@@ -67,10 +67,14 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "DownloadHelper.VdhCoApp"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.AzureCLI"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OBSProject.OBSStudio"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "HexChat.HexChat"
 
 # Audio
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Audacity.Audacity"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "AlexanderKojevnikov.Spek"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "AndreWiethoff.ExactAudioCopy"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "MediaArea.MediaInfo.GUI"
+choco install --yes lossless-audio-checker
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
@@ -140,3 +144,4 @@ Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WindowsA
 Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-ManagementConsole"
 Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-ASPNET45"
 Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "WCF-HTTP-Activation45"
+Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "NetFx3" # required by EAC
