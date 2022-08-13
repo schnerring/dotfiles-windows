@@ -76,6 +76,10 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "MediaArea.MediaInfo.GUI"
 choco install --yes lossless-audio-checker
 
+# Jellyfin
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Jellyfin.JellyfinMediaPlayer"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "IanWalton.JellyfinMPVShim"
+
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Discord.Discord"
