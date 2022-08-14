@@ -142,7 +142,7 @@ git config --global user.signingkey "F5E5BE5C325BCB56"
 git config --global commit.gpgsign true
 
 # Re-enable old Windows context menu
-New-Item -Force -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
+New-Item -Force -Value "" -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
 
 # Windows Features (VIS)
 
