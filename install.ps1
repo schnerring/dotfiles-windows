@@ -141,6 +141,9 @@ git config --global user.signingkey "F5E5BE5C325BCB56"
 # Sign each commit
 git config --global commit.gpgsign true
 
+# Re-enable old Windows context menu (run non-elevated)
+New-Item -Force -Path "HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
+
 # Windows Features (VIS)
 
 Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WebServer"
