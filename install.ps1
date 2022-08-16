@@ -74,7 +74,10 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "AlexanderKojevnikov.Spek"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "AndreWiethoff.ExactAudioCopy"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "MediaArea.MediaInfo.GUI"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "ChrisBagwell.SoX"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "PeterPawlowski.foobar2000"
 choco install --yes lossless-audio-checker
+choco install --yes lame
 
 # Jellyfin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Jellyfin.JellyfinMediaPlayer"
