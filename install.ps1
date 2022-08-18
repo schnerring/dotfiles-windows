@@ -88,6 +88,8 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Discord.Discord"
 npm install --global npm-check-updates
 
+scoop install intermodal
+
 # TODO: Missing Apps
 
 # winget install "Graphviz.Graphviz"
