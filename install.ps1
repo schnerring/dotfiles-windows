@@ -82,6 +82,7 @@ choco install --yes lame
 # Jellyfin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Jellyfin.JellyfinMediaPlayer"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "IanWalton.JellyfinMPVShim"
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "jeffvli.Sonixd"
 
 # TODO: don't run as admin
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Spotify.Spotify"
