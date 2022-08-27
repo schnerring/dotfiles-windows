@@ -68,6 +68,7 @@ winget install --silent --source winget --accept-source-agreements --accept-pack
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "OBSProject.OBSStudio"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "HexChat.HexChat"
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Microsoft.VisualStudioCode" --override '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders"'
+winget install --silent --source winget --accept-source-agreements --accept-package-agreements "SatoshiLabs.trezor-suite"
 
 # Audio
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Audacity.Audacity"
