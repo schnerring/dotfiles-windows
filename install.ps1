@@ -96,7 +96,6 @@ scoop install intermodal
 
 # winget install "Graphviz.Graphviz"
 
-# poshgit
 # gitversion-portable
 # sourcetree
 # filezilla
