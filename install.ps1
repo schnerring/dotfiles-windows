@@ -135,7 +135,6 @@ Add-PoshGitToProfile
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
 
 Add-WindowsCapability -Online -Name "OpenSSH.Client"
-Set-Service -Name ssh-agent -StartupType Automatic
 
 git config --global user.name "Michael Schnerring"
 git config --global user.email "3743342+schnerring@users.noreply.github.com"
