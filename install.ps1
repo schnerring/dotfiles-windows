@@ -21,7 +21,6 @@ scoop install intermodal
 
 # gitversion-portable
 # sourcetree
-# filezilla
 # syncthing
 # IPMI View
 

@@ -75,6 +75,7 @@ Install-WingetPackage "OpenJS.NodeJS.LTS"
 Install-WingetPackage "Postman.Postman"
 Install-WingetPackage "PuTTY.PuTTY"
 Install-WingetPackage "Python.Python.3.10"
+Install-WingetPackage "WinSCP.WinSCP"
 
 # Communications
 Install-WingetPackage "Discord.Discord"
