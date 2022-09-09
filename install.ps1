@@ -107,12 +107,6 @@ choco install --yes kubernetes-helm
 
 choco install --yes paint.net
 
-# Git
-winget install --silent --source winget --accept-source-agreements --accept-package-agreements "Git.Git"
-# Enable Developer Mode
-# Used by Git to create symlinks with mklink
-Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" "AllowDevelopmentWithoutDevLicense" 1
-
 # Hugo
 winget install --silent --source winget --accept-source-agreements --accept-package-agreements "GoLang.Go"
 choco install --yes hugo-extended
@@ -135,17 +129,6 @@ Add-PoshGitToProfile
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
 
 Add-WindowsCapability -Online -Name "OpenSSH.Client"
-
-git config --global user.name "Michael Schnerring"
-git config --global user.email "3743342+schnerring@users.noreply.github.com"
-
-# Configure GPG
-git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
-git config --global core.sshcommand "plink -agent"
-# [S] GPG Key
-git config --global user.signingkey "F5E5BE5C325BCB56"
-# Sign each commit
-git config --global commit.gpgsign true
 
 # Re-enable old Windows context menu
 New-Item -Force -Value "" -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
