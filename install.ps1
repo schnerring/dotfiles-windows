@@ -132,12 +132,3 @@ Add-WindowsCapability -Online -Name "OpenSSH.Client"
 
 # Re-enable old Windows context menu
 New-Item -Force -Value "" -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
-
-# Windows Features (VIS)
-
-Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WebServer"
-Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WindowsAuthentication"
-Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-ManagementConsole"
-Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-ASPNET45"
-Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "WCF-HTTP-Activation45"
-Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "NetFx3" # required by EAC
