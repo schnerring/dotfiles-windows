@@ -8,7 +8,7 @@ git config --global user.email "3743342+schnerring@users.noreply.github.com"
 # Configure GPG
 git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
 
-# Use PuTTY for SSH 
+# Use PuTTY for SSH
 git config --global core.sshcommand "plink -agent"
 
 # GPG Signing Key

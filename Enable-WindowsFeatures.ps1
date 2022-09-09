@@ -1,3 +1,5 @@
+#requires -RunAsAdministrator
+
 # VIS
 Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WebServer"
 Enable-WindowsOptionalFeature -All -NoRestart -Online -FeatureName "IIS-WindowsAuthentication"
