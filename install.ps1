@@ -19,8 +19,6 @@ scoop install intermodal
 
 # TODO: Missing Apps
 
-# winget install "Graphviz.Graphviz"
-
 # gitversion-portable
 # sourcetree
 # filezilla

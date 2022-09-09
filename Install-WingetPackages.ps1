@@ -62,6 +62,7 @@ Install-WingetPackage "VideoLAN.VLC"
 Install-WingetPackage "Git.Git"
 Install-WingetPackage "GoLang.Go.1.19"
 Install-WingetPackage "GnuPG.Gpg4win"
+Install-WingetPackage "Graphviz.Graphviz" # required by `terraform graph`
 Install-WingetPackage "Microsoft.AzureCLI"
 Install-WingetPackage "Microsoft.AzureStorageExplorer"
 Install-WingetPackage "Microsoft.PowerShell" "ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ADD_FILE_CONTEXT_MENU_RUNPOWERSHELL=1"
