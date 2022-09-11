@@ -49,4 +49,3 @@ Add-PoshGitToProfile
 
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
 
-Add-WindowsCapability -Online -Name "OpenSSH.Client"
