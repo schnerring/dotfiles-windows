@@ -9,9 +9,6 @@ Invoke-WebRequest -UseBasicParsing "https://community.chocolatey.org/install.ps1
 # Install Scoop (Admin not necessary)
 Invoke-WebRequest -UseBasicParsing get.scoop.sh | Invoke-Expression
 
-choco install --yes lossless-audio-checker
-choco install --yes lame
-
 # TODO: don't run as admin
 npm install --global npm-check-updates
 
@@ -23,21 +20,6 @@ scoop install intermodal
 # sourcetree
 # syncthing
 # IPMI View
-
-choco install --yes kubernetes-cli
-choco install --yes kubernetes-helm
-
-choco install --yes paint.net
-
-# Hugo
-choco install --yes hugo-extended
-
-# gpg4win + win ssh + wsl
-choco install wsl-ssh-pageant-gui --yes
-[Environment]::SetEnvironmentVariable('SSH_AUTH_SOCK', '\\.\pipe\ssh-pageant', 'User')
-
-choco install packer --yes
-choco install terraform --yes
 
 # EqualizerAPO doesn't exist in winget
 
