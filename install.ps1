@@ -23,11 +23,5 @@ scoop install intermodal
 
 # EqualizerAPO doesn't exist in winget
 
-Get-PackageProvider NuGet -Force
-
-PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
-# Run in PS5 and PS7
-Add-PoshGitToProfile
-
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
 
