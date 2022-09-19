@@ -22,6 +22,3 @@ scoop install intermodal
 # IPMI View
 
 # EqualizerAPO doesn't exist in winget
-
-Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
-
