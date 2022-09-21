@@ -3,6 +3,8 @@ npm install --global npm-check-updates
 
 scoop install intermodal
 
+Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
+
 # TODO: Missing Apps
 
 # gitversion-portable
