@@ -25,7 +25,7 @@ function Install-WingetPackage {
         [Parameter(Position = 1)]
         [string] $PackageOverride
     )
-    
+
     if (Assert-WingetPackage $PackageId) {
         Write-Output "Skipping $($PackageId) because it is already installed..."
         return
@@ -43,7 +43,7 @@ function Install-WingetPackage {
 # Browsers
 Install-WingetPackage "Mozilla.Firefox"
 Install-WingetPackage "Google.Chrome"
-    
+
 # Common
 Install-WingetPackage "7zip.7zip"
 Install-WingetPackage "DownloadHelper.VdhCoApp"
@@ -59,6 +59,7 @@ Install-WingetPackage "Valve.Steam"
 Install-WingetPackage "VideoLAN.VLC"
 
 # Development
+Install-WingetPackage "Docker.DockerDesktop"
 Install-WingetPackage "Git.Git"
 Install-WingetPackage "GoLang.Go.1.19"
 Install-WingetPackage "GnuPG.Gpg4win"
