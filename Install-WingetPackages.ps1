@@ -61,7 +61,7 @@ Install-WingetPackage "VideoLAN.VLC"
 # Development
 Install-WingetPackage "Docker.DockerDesktop"
 Install-WingetPackage "Git.Git"
-Install-WingetPackage "GoLang.Go.1.19"
+Install-WingetPackage "GoLang.Go.1.20"
 Install-WingetPackage "GnuPG.Gpg4win"
 Install-WingetPackage "Graphviz.Graphviz" # required by `terraform graph`
 Install-WingetPackage "Microsoft.AzureCLI"
