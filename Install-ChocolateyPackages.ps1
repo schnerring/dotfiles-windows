@@ -48,7 +48,6 @@ Install-ChocoPackage paint.net
 # Development
 Install-ChocoPackage hugo-extended
 Install-ChocoPackage packer
-Install-ChocoPackage terraform
 
 # gpg4win + win ssh + wsl
 Install-ChocoPackage wsl-ssh-pageant-gui
