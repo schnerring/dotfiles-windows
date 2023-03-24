@@ -72,6 +72,7 @@ Install-WingetPackage "Microsoft.RemoteDesktopClient"
 Install-WingetPackage "Microsoft.SQLServerManagementStudio"
 Install-WingetPackage "Microsoft.VisualStudio.2022.Professional" "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --add Microsoft.VisualStudio.Workload.NetCrossPlat;includeRecommended --add Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --add Microsoft.VisualStudio.Workload.Office;includeRecommended"
 Install-WingetPackage "Microsoft.VisualStudioCode" '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders"'
+Install-WingetPackage "nektos.act"
 Install-WingetPackage "Notepad++.Notepad++"
 Install-WingetPackage "OpenJS.NodeJS.LTS"
 Install-WingetPackage "Postman.Postman"
