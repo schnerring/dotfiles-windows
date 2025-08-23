@@ -34,22 +34,5 @@ function Install-ChocoPackage {
   choco install --yes $PackageName
 }
 
-# Kubernetes
-Install-ChocoPackage kubernetes-cli
-Install-ChocoPackage kubernetes-helm
-
-# Audio
-Install-ChocoPackage lossless-audio-checker
-Install-ChocoPackage lame
-
-# Graphics
-Install-ChocoPackage paint.net
-
-# Development
-Install-ChocoPackage hugo-extended
-Install-ChocoPackage packer
-
-# gpg4win + win ssh + wsl
-Install-ChocoPackage wsl-ssh-pageant-gui
-[Environment]::SetEnvironmentVariable('SSH_AUTH_SOCK', '\\.\pipe\ssh-pageant', 'User')
+Install-ChocoPackage EqualizerAPO
 
