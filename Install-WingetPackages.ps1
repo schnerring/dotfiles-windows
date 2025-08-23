@@ -40,6 +40,9 @@ function Install-WingetPackage {
     }
 }
 
+# PowerShell 7
+Install-WingetPackage "Microsoft.PowerShell"
+
 # Browsers
 Install-WingetPackage "Mozilla.Firefox"
 Install-WingetPackage "Google.Chrome"
