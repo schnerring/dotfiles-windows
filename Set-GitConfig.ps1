@@ -1,7 +1,3 @@
-# Enable Windows Developer Mode
-# Required by Git to create symlinks using mklink
-Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" "AllowDevelopmentWithoutDevLicense" 1
-
 git config --global user.name "Michael Schnerring"
 git config --global user.email "3743342+schnerring@users.noreply.github.com"
 
