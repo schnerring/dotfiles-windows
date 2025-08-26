@@ -12,3 +12,4 @@ git config --global user.signingkey "F5E5BE5C325BCB56"
 
 # Sign each commit
 git config --global commit.gpgsign true
+git config --global tag.gpgsign true
