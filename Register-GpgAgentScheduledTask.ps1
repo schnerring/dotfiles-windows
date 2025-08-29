@@ -9,6 +9,6 @@ $gpgconfPath = Join-Path -Path ${env:ProgramFiles(x86)} -ChildPath "GnuPG\bin\gp
 $action = New-ScheduledTaskAction -Execute $gpgconfPath -Argument "--launch gpg-agent"
 $trigger = New-ScheduledTaskTrigger -AtLogon -User $username
 $principal = New-ScheduledTaskPrincipal -UserId "NT AUTHORITY\SYSTEM"
-$settings = New-ScheduledTaskSettingsSet
+$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit 0 -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 $task = New-ScheduledTask -Action $action -Principal $principal -Trigger $trigger -Settings $settings
 Register-ScheduledTask "gpg-agent" -InputObject $task
