@@ -104,7 +104,7 @@ Install-WingetPackage "Microsoft.RemoteDesktopClient"
 Install-WingetPackage "Microsoft.SQLServerManagementStudio"
 Install-WingetPackage "Microsoft.VisualStudioCode" '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders,addtopath"'
 Install-WingetPackage "Notepad++.Notepad++"
-Install-WingetPackage "OpenJS.NodeJS.LTS"
+Install-WingetPackage "OpenJS.NodeJS"
 Install-WingetPackage "PuTTY.PuTTY"
 Install-WingetPackage "stedolan.jq"
 Install-WingetPackage "Supermicro.IPMIView"
